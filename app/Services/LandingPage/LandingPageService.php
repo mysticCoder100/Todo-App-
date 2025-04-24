@@ -89,7 +89,7 @@ class LandingPageService implements LandingPageServiceContract
         ];
     }
 
-    public function Login(): array
+    public function login(): array
     {
         $loginFields = [
             [
