@@ -20,7 +20,6 @@ class AuthService implements AuthServiceContract
     public function login(LoginDto $loginDto): bool
     {
         if (Auth::attempt($loginDto->toArray())) {
-            echo "here";
             session()->regenerate();
             return true;
         }

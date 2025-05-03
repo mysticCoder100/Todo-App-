@@ -7,7 +7,7 @@ use App\Dto\RegisterDto;
 
 interface AuthServiceContract
 {
-    public function login(LoginDto $loginDto);
+    public function login(LoginDto $loginDto): bool;
 
-    public function register(RegisterDto $registerDto);
+    public function register(RegisterDto $registerDto): bool;
 }
